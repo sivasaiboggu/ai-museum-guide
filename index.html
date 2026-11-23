@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Talking Gallery — an AI museum guide</title>
+<meta name="description" content="Fourteen works from the Metropolitan Museum of Art, spanning 1465 to 1892. Tap one and ask the artist — in their own era, in their own manner, grounded in verified facts.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap site-in">
+    <div>
+      <div class="wordmark"><a href="#/">The Talking <em>Gallery</em></a></div>
+      <div class="site-sub">An AI museum guide. Fourteen paintings from the Met, each one a person you can interview.</div>
+    </div>
+    <nav class="main" aria-label="Main">
+      <button data-view="gallery" aria-current="true">Gallery</button>
+      <button data-view="scan">Scan a work</button>
+      <button data-view="met">Search the Met</button>
+      <button data-view="settings">Settings</button>
+    </nav>
+  </div>
+  <div class="wrap" style="padding-bottom:12px">
+    <span class="key-pill" id="key-pill">No key — offline replies only</span>
+  </div>
+</header>
+<main class="wrap" id="app"></main>
+<footer class="site">
+  <div class="wrap">
+    <b>The Talking Gallery</b> — a hackathon build. Facts checked against the Met Collection API, 23 Nov 2026.
+    Images: Wikimedia Commons, public domain, credited per work. The artist's words are a persona —
+    <b>inspired by</b>, never a real quote, never a cloned voice. Your Gemini key, if you add one, stays in your browser.
+  </div>
+</footer>
+<script src="lib.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
