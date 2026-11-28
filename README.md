@@ -84,7 +84,7 @@ moma.org. No gradients, no glows, no stock copy.
 - `data.js` — the 14-work catalogue (verified facts, personas, opening lines), tours, endpoints
 - `lib.js` — pure logic (fuzzy match, offline replies, Gemini request builders) shared with tests
 - `app.js` — views, chat, scan, Met search, settings, tours
-- `tests/test.js` — 15 tests, Node built-in runner
+- `tests/test.js` — 16 tests, Node built-in runner
 - `assets/img/` — 14 public-domain images (Wikimedia Commons)
 - `assets/fonts/` — Cormorant Garamond woff2 (self-hosted)
 - `met-records.json` — the raw Met API records the facts were checked against

@@ -529,7 +529,7 @@
             return fetch(window.TG_MET_OBJECT + "/" + id).then(function (r) { return r.json(); }).catch(function () { return null; });
           })).then(function (objs) {
             objs.filter(Boolean).forEach(function (o) {
-              var known = byId(CAT.find(function (w) { return w.metObjectId === o.objectID; }) ? CAT.find(function (w) { return w.metObjectId === o.objectID; }).id : "");
+              var known = CAT.find(function (w) { return w.metObjectId === o.objectID; }) || null;
               var card = el("button", "met-hit");
               card.innerHTML = (o.primaryImageSmall ? "<img src=\"" + o.primaryImageSmall + "\" alt=\"\" loading=\"lazy\">" : "<div class=\"noimg\">No open image for this work</div>") +
                 "<h3>" + esc(o.title) + "</h3><div class=\"m\">" + esc(o.artistDisplayName || "Unknown artist") + " · " + esc(o.objectDate || "") + "</div>" +
